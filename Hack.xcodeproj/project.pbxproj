@@ -16,6 +16,8 @@
 		2CA6F40820FC889E00437F72 /* HackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA6F40720FC889E00437F72 /* HackTests.swift */; };
 		2CA6F41320FDF61E00437F72 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA6F41220FDF61E00437F72 /* SignUpViewController.swift */; };
 		2CA6F41520FDFAEE00437F72 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA6F41420FDFAEE00437F72 /* DashboardViewController.swift */; };
+		7DC8721220FF4E0C00D76E8F /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC8721120FF4E0C00D76E8F /* MoreViewController.swift */; };
+		7DC8721420FF639D00D76E8F /* MyTrackerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC8721320FF639D00D76E8F /* MyTrackerTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		2CA6F40920FC889E00437F72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CA6F41220FDF61E00437F72 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		2CA6F41420FDFAEE00437F72 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		7DC8721120FF4E0C00D76E8F /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		7DC8721320FF639D00D76E8F /* MyTrackerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTrackerTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,8 @@
 				2CA6F3F620FC889E00437F72 /* Hack.xcdatamodeld */,
 				2CA6F41220FDF61E00437F72 /* SignUpViewController.swift */,
 				2CA6F41420FDFAEE00437F72 /* DashboardViewController.swift */,
+				7DC8721120FF4E0C00D76E8F /* MoreViewController.swift */,
+				7DC8721320FF639D00D76E8F /* MyTrackerTableViewController.swift */,
 			);
 			path = Hack;
 			sourceTree = "<group>";
@@ -211,8 +217,10 @@
 				2CA6F3F820FC889E00437F72 /* Hack.xcdatamodeld in Sources */,
 				2CA6F3F220FC889E00437F72 /* ViewController.swift in Sources */,
 				2CA6F41520FDFAEE00437F72 /* DashboardViewController.swift in Sources */,
+				7DC8721220FF4E0C00D76E8F /* MoreViewController.swift in Sources */,
 				2CA6F41320FDF61E00437F72 /* SignUpViewController.swift in Sources */,
 				2CA6F3F020FC889E00437F72 /* AppDelegate.swift in Sources */,
+				7DC8721420FF639D00D76E8F /* MyTrackerTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

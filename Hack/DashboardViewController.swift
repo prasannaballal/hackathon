@@ -14,7 +14,10 @@ class DashboardViewController: UIViewController {
     @IBOutlet weak var view2: UIView!
     @IBOutlet weak var view3: UIView!
     @IBOutlet weak var view4: UIView!
+    @IBOutlet weak var profilePic: UIImageView!
+    @IBOutlet weak var buttonIcon1: UIImageView!
     
+    @IBOutlet weak var myTracker: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,8 +26,12 @@ class DashboardViewController: UIViewController {
         let root = self.navigationController?.viewControllers[0]
         root?.title = "Dashboard"
         let backImageView = UIImageView(image: UIImage(named: "background2"))
-        self.view.addSubview(backImageView)
-        self.view.sendSubview(toBack: backImageView)
+        view.addSubview(backImageView)
+        view.sendSubview(toBack: backImageView)
+        profilePic.layer.cornerRadius = profilePic.frame.size.width / 2
+        profilePic.clipsToBounds = true
+        
+        buttonIcon1.sendSubview(toBack: self.myTracker)
     }
 
     override func didReceiveMemoryWarning() {
