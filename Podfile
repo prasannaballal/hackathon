@@ -6,7 +6,7 @@ target 'Hack' do
   use_frameworks!
 
   # Pods for Hack
-	pod "SwiftChart"
+  
 
 
   target 'HackTests' do
