@@ -22,6 +22,7 @@
 		7DC8721821008D3200D76E8F /* DonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC8721721008D3200D76E8F /* DonationViewController.swift */; };
 		7DC8721A2100905000D76E8F /* DonationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC872192100905000D76E8F /* DonationDetailViewController.swift */; };
 		7DC8721C210094CE00D76E8F /* DonationSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC8721B210094CE00D76E8F /* DonationSuccessViewController.swift */; };
+		7DC8721E2100A75100D76E8F /* TrackerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC8721D2100A75100D76E8F /* TrackerCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		7DC8721721008D3200D76E8F /* DonationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationViewController.swift; sourceTree = "<group>"; };
 		7DC872192100905000D76E8F /* DonationDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationDetailViewController.swift; sourceTree = "<group>"; };
 		7DC8721B210094CE00D76E8F /* DonationSuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationSuccessViewController.swift; sourceTree = "<group>"; };
+		7DC8721D2100A75100D76E8F /* TrackerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackerCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				7DC8721721008D3200D76E8F /* DonationViewController.swift */,
 				7DC872192100905000D76E8F /* DonationDetailViewController.swift */,
 				7DC8721B210094CE00D76E8F /* DonationSuccessViewController.swift */,
+				7DC8721D2100A75100D76E8F /* TrackerCell.swift */,
 			);
 			path = Hack;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				7DC8721C210094CE00D76E8F /* DonationSuccessViewController.swift in Sources */,
 				2CA6F3F820FC889E00437F72 /* Hack.xcdatamodeld in Sources */,
 				2CA6F3F220FC889E00437F72 /* ViewController.swift in Sources */,
+				7DC8721E2100A75100D76E8F /* TrackerCell.swift in Sources */,
 				2CA6F41520FDFAEE00437F72 /* DashboardViewController.swift in Sources */,
 				7DC8721220FF4E0C00D76E8F /* MoreViewController.swift in Sources */,
 				7DC8721A2100905000D76E8F /* DonationDetailViewController.swift in Sources */,

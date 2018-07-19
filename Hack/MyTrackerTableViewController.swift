@@ -9,6 +9,9 @@
 import UIKit
 
 class MyTrackerTableViewController: UITableViewController {
+    let trackerValues = ["Diet","Exercise","Medicine","Sleep","My Binder"]
+    let primaryValues = ["Calories: 100/1500","Calories: 100/1500","Calories: 100/1500","Calories: 100/1500",""]
+    let secondaryValues = ["Vit D Goal: 1/5","Vit D Goal: 1/5","Vit D Goal: 1/5","Vit D Goal: 1/5",""]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,16 +37,20 @@ class MyTrackerTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 6
+        return 5
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100.0
+        return 90.0
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "test", for: indexPath)
+        let cell:TrackerCell = (tableView.dequeueReusableCell(withIdentifier: "test", for: indexPath) as? TrackerCell)!
+        
+        cell.trackerValue.text = trackerValues[indexPath.row]
+        cell.primaryDescription.text = primaryValues[indexPath.row]
+        cell.secondaryDescription.text = secondaryValues[indexPath.row]
 
         // Configure the cell...
 
