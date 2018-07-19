@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C94BE252100BEE7005A4B9C /* ConsultationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C94BE242100BEE7005A4B9C /* ConsultationViewController.swift */; };
+		2C94BE272100D36C005A4B9C /* CheckAppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C94BE262100D36C005A4B9C /* CheckAppointmentViewController.swift */; };
+		2C94BE292100D94F005A4B9C /* BookAnAppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C94BE282100D94F005A4B9C /* BookAnAppointmentViewController.swift */; };
+		2C94BE2B2100FA2F005A4B9C /* AppHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C94BE2A2100FA2F005A4B9C /* AppHistoryViewController.swift */; };
+		2C94BE2D2100FEBB005A4B9C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C94BE2C2100FEBB005A4B9C /* TableViewCell.swift */; };
 		2CA6F3F020FC889E00437F72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA6F3EF20FC889E00437F72 /* AppDelegate.swift */; };
 		2CA6F3F220FC889E00437F72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA6F3F120FC889E00437F72 /* ViewController.swift */; };
 		2CA6F3F520FC889E00437F72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CA6F3F320FC889E00437F72 /* Main.storyboard */; };
@@ -36,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C94BE242100BEE7005A4B9C /* ConsultationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsultationViewController.swift; sourceTree = "<group>"; };
+		2C94BE262100D36C005A4B9C /* CheckAppointmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckAppointmentViewController.swift; sourceTree = "<group>"; };
+		2C94BE282100D94F005A4B9C /* BookAnAppointmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookAnAppointmentViewController.swift; sourceTree = "<group>"; };
+		2C94BE2A2100FA2F005A4B9C /* AppHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppHistoryViewController.swift; sourceTree = "<group>"; };
+		2C94BE2C2100FEBB005A4B9C /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		2CA6F3EC20FC889E00437F72 /* Hack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA6F3EF20FC889E00437F72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CA6F3F120FC889E00437F72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +123,11 @@
 				7DC872192100905000D76E8F /* DonationDetailViewController.swift */,
 				7DC8721B210094CE00D76E8F /* DonationSuccessViewController.swift */,
 				7DC8721D2100A75100D76E8F /* TrackerCell.swift */,
+				2C94BE242100BEE7005A4B9C /* ConsultationViewController.swift */,
+				2C94BE262100D36C005A4B9C /* CheckAppointmentViewController.swift */,
+				2C94BE282100D94F005A4B9C /* BookAnAppointmentViewController.swift */,
+				2C94BE2A2100FA2F005A4B9C /* AppHistoryViewController.swift */,
+				2C94BE2C2100FEBB005A4B9C /* TableViewCell.swift */,
 			);
 			path = Hack;
 			sourceTree = "<group>";
@@ -238,7 +253,12 @@
 				7DC8721220FF4E0C00D76E8F /* MoreViewController.swift in Sources */,
 				7DC8721A2100905000D76E8F /* DonationDetailViewController.swift in Sources */,
 				2CA6F41320FDF61E00437F72 /* SignUpViewController.swift in Sources */,
+				2C94BE272100D36C005A4B9C /* CheckAppointmentViewController.swift in Sources */,
+				2C94BE292100D94F005A4B9C /* BookAnAppointmentViewController.swift in Sources */,
+				2C94BE2B2100FA2F005A4B9C /* AppHistoryViewController.swift in Sources */,
+				2C94BE252100BEE7005A4B9C /* ConsultationViewController.swift in Sources */,
 				2CA6F3F020FC889E00437F72 /* AppDelegate.swift in Sources */,
+				2C94BE2D2100FEBB005A4B9C /* TableViewCell.swift in Sources */,
 				7DC872162100767100D76E8F /* FAQTableViewController.swift in Sources */,
 				7DC8721420FF639D00D76E8F /* MyTrackerTableViewController.swift in Sources */,
 			);

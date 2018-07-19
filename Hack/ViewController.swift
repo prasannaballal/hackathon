@@ -44,23 +44,23 @@ class ViewController: UIViewController {
         
         // http://cl-service-route-cl-service.f-az.uk.pass.intranet.db.com/users/roles
         // http://10.2.231.133:8081/user/roles
-        //        let url = URL(string: "http://cl-service-route-cl-service.f-az.uk.pass.intranet.db.com/users/roles")
-        //
-        //        let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
-        //            if let _ = data{
-        //                let newData = String(data: data!, encoding: String.Encoding.utf8)
-        //            }
-        //
-        //
-        //            //            print("Data:",String(data: data!, encoding: String.Encoding.utf8) ?? "")
-        //
-        //            //            DispatchQueue.main.async {
-        //            //                self.textArea.text = String(data: data!, encoding: String.Encoding.utf8)
-        //            //            }
-        //            print("Error",error?.localizedDescription)
-        //            print("Response:",response)
-        //
-        //        }
+//                let url = URL(string: "http://cl-service-route-cl-service.f-az.uk.pass.intranet.db.com/users/roles")
+//        
+//                let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
+//                    if let _ = data{
+//                        let newData = String(data: data!, encoding: String.Encoding.utf8)
+//                    }
+//        
+//        
+//                    //            print("Data:",String(data: data!, encoding: String.Encoding.utf8) ?? "")
+//        
+//                    //            DispatchQueue.main.async {
+//                    //                self.textArea.text = String(data: data!, encoding: String.Encoding.utf8)
+//                    //            }
+//                    print("Error",error?.localizedDescription)
+//                    print("Response:",response)
+//        
+//                }
         //
         //
         //        task.resume()

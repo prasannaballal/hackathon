@@ -12,6 +12,7 @@ class MyTrackerTableViewController: UITableViewController {
     let trackerValues = ["Diet","Exercise","Medicine","Sleep","My Binder"]
     let primaryValues = ["Calories: 100/1500","Calories: 100/1500","Calories: 100/1500","Calories: 100/1500",""]
     let secondaryValues = ["Vit D Goal: 1/5","Vit D Goal: 1/5","Vit D Goal: 1/5","Vit D Goal: 1/5",""]
+   let imageNames = ["launch1","launch1","launch1","launch1","launch1","launch1"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,7 +52,8 @@ class MyTrackerTableViewController: UITableViewController {
         cell.trackerValue.text = trackerValues[indexPath.row]
         cell.primaryDescription.text = primaryValues[indexPath.row]
         cell.secondaryDescription.text = secondaryValues[indexPath.row]
-
+        cell.imageForTracker.image = UIImage(named: imageNames[indexPath.row])
+        cell.contentView.backgroundColor = UIColor.blue
         // Configure the cell...
 
         

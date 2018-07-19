@@ -29,7 +29,8 @@ class DashboardViewController: UIViewController {
         profilePic.layer.cornerRadius = profilePic.frame.size.width / 2
         profilePic.clipsToBounds = true
         
-        buttonIcon1.sendSubview(toBack: self.myTracker)
+//        buttonIcon1.sendSubview(toBack: self.myTracker)
+        view1.layer.cornerRadius = 5.0
     }
     
     override func viewWillAppear(_ animated: Bool) {
