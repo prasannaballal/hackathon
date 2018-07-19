@@ -19,6 +19,11 @@ class MoreViewController: UIViewController {
         signOut.layer.borderColor = UIColor.blue.cgColor
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        let root = self.navigationController?.viewControllers[0]
+        root?.title = "More"
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

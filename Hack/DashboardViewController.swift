@@ -23,8 +23,6 @@ class DashboardViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let root = self.navigationController?.viewControllers[0]
-        root?.title = "Dashboard"
         let backImageView = UIImageView(image: UIImage(named: "background2"))
         view.addSubview(backImageView)
         view.sendSubview(toBack: backImageView)
@@ -32,6 +30,11 @@ class DashboardViewController: UIViewController {
         profilePic.clipsToBounds = true
         
         buttonIcon1.sendSubview(toBack: self.myTracker)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let root = self.navigationController?.viewControllers[0]
+        root?.title = "Dashboard"
     }
 
     override func didReceiveMemoryWarning() {
