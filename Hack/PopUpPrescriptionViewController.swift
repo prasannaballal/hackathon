@@ -1,17 +1,18 @@
 //
-//  AppHistoryViewController.swift
+//  PopUpPrescriptionViewController.swift
 //  Hack
 //
-//  Created by Sreeja Chowdhury on 7/19/18.
+//  Created by Sreeja Chowdhury on 7/20/18.
 //  Copyright © 2018 Sreeja Chowdhury. All rights reserved.
 //
 
 import UIKit
 
-class AppHistoryViewController: UIViewController{
-    
+class PopUpPrescriptionViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
+       self.view.backgroundColor = UIColor.black.withAlphaComponent(0.6)
 
         // Do any additional setup after loading the view.
     }
@@ -20,17 +21,16 @@ class AppHistoryViewController: UIViewController{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    @IBAction func popUpPrescription(_ sender: Any) {
-        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "popUpPres1") as! PopUpPrescriptionViewController
-        self.addChildViewController(popOverVC)
-        popOverVC.view.frame = self.view.frame
-        self.view.addSubview(popOverVC.view)
-        popOverVC.didMove(toParentViewController: self)
+    @IBAction func closePopUp(_ sender: Any) {
+        self.view.removeFromSuperview()
+        dismiss(animated: true)
+    }
+   
+    @IBAction func closeIt(_ sender: Any) {
+        self.view.removeFromSuperview()
     }
 
-
-        /*
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
