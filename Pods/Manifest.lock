@@ -1,0 +1,16 @@
+PODS:
+  - SwiftChart (0.2.1)
+
+DEPENDENCIES:
+  - SwiftChart
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SwiftChart
+
+SPEC CHECKSUMS:
+  SwiftChart: b76d4607022107a46473aa29a93c867872253d68
+
+PODFILE CHECKSUM: 5be635fdbe9500d537a0cd371a7bcdbbd9d86af8
+
+COCOAPODS: 1.5.3
