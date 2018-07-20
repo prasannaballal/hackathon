@@ -30,6 +30,7 @@
 		2CA6F40820FC889E00437F72 /* HackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA6F40720FC889E00437F72 /* HackTests.swift */; };
 		2CA6F41320FDF61E00437F72 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA6F41220FDF61E00437F72 /* SignUpViewController.swift */; };
 		2CA6F41520FDFAEE00437F72 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA6F41420FDFAEE00437F72 /* DashboardViewController.swift */; };
+		7D445ECD2101E5EE000A11B4 /* 30 Min. Deep Healing Music for The Body  Soul - Relaxing Music Meditation Music Inner Peace.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7D445ECC2101E5EE000A11B4 /* 30 Min. Deep Healing Music for The Body  Soul - Relaxing Music Meditation Music Inner Peace.mp3 */; };
 		7DC8721220FF4E0C00D76E8F /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC8721120FF4E0C00D76E8F /* MoreViewController.swift */; };
 		7DC8721420FF639D00D76E8F /* MyTrackerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC8721320FF639D00D76E8F /* MyTrackerTableViewController.swift */; };
 		7DC872162100767100D76E8F /* FAQTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC872152100767100D76E8F /* FAQTableViewController.swift */; };
@@ -77,6 +78,7 @@
 		2CA6F40920FC889E00437F72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CA6F41220FDF61E00437F72 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		2CA6F41420FDFAEE00437F72 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		7D445ECC2101E5EE000A11B4 /* 30 Min. Deep Healing Music for The Body  Soul - Relaxing Music Meditation Music Inner Peace.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "30 Min. Deep Healing Music for The Body  Soul - Relaxing Music Meditation Music Inner Peace.mp3"; sourceTree = "<group>"; };
 		7DC8721120FF4E0C00D76E8F /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		7DC8721320FF639D00D76E8F /* MyTrackerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTrackerTableViewController.swift; sourceTree = "<group>"; };
 		7DC872152100767100D76E8F /* FAQTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQTableViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 		2C94BE3A21016F70005A4B9C /* Music */ = {
 			isa = PBXGroup;
 			children = (
+				7D445ECC2101E5EE000A11B4 /* 30 Min. Deep Healing Music for The Body  Soul - Relaxing Music Meditation Music Inner Peace.mp3 */,
 				2C94BE3B21016FC1005A4B9C /* Test1.mp3 */,
 			);
 			name = Music;
@@ -264,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D445ECD2101E5EE000A11B4 /* 30 Min. Deep Healing Music for The Body  Soul - Relaxing Music Meditation Music Inner Peace.mp3 in Resources */,
 				2C94BE402101BDED005A4B9C /* AnyStoryboard.storyboard in Resources */,
 				2CA6F3FD20FC889E00437F72 /* LaunchScreen.storyboard in Resources */,
 				2CA6F3FA20FC889E00437F72 /* Assets.xcassets in Resources */,
