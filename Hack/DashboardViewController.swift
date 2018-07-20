@@ -30,10 +30,10 @@ class DashboardViewController: UIViewController {
         profilePic.clipsToBounds = true
         
 //        buttonIcon1.sendSubview(toBack: self.myTracker)
-        view1.layer.cornerRadius = 10.0
-        view2.layer.cornerRadius = 10.0
-        view3.layer.cornerRadius = 10.0
-        view4.layer.cornerRadius = 10.0
+        view1.layer.cornerRadius = 20.0
+        view2.layer.cornerRadius = 20.0
+        view3.layer.cornerRadius = 20.0
+        view4.layer.cornerRadius = 20.0
 
     }
     

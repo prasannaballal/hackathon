@@ -12,7 +12,7 @@ class MyTrackerTableViewController: UITableViewController {
     let trackerValues = ["Diet","Exercise","Medicine","Sleep","My Binder"]
     let primaryValues = ["Calories: 100/1500","Calories: 100/1500","Calories: 100/1500","Calories: 100/1500",""]
     let secondaryValues = ["Vit D Goal: 1/5","Vit D Goal: 1/5","Vit D Goal: 1/5","Vit D Goal: 1/5",""]
-   let imageNames = ["launch1","launch1","launch1","launch1","launch1","launch1"]
+   let imageNames = ["diet","yoga","pills","moon-2","contract"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +30,20 @@ class MyTrackerTableViewController: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let dietVC = storyboard.instantiateViewController(withIdentifier: "dietgraph")
+            self.navigationController?.pushViewController(dietVC, animated: true)
+        }
+        
+        if indexPath.row == 4 {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let dietVC = storyboard.instantiateViewController(withIdentifier: "reportsvc")
+            self.navigationController?.pushViewController(dietVC, animated: true)
+        }
     }
 
     // MARK: - Table view data source
@@ -56,7 +70,7 @@ class MyTrackerTableViewController: UITableViewController {
         cell.primaryDescription.text = primaryValues[indexPath.row]
         cell.secondaryDescription.text = secondaryValues[indexPath.row]
         cell.imageForTracker.image = UIImage(named: imageNames[indexPath.row])
-        cell.contentView.backgroundColor = UIColor.blue
+//        cell.contentView.backgroundColor = UIColor.blue
         // Configure the cell...
 
         

@@ -60,48 +60,66 @@ class ViewController: UIViewController {
         
         
         if validateUsernamePassword() {
-            
             DispatchQueue.main.async {
                 self.activityIndicator.startAnimating()
             }
             
-            let url = URL(string: "http://10.2.231.133:8081/user/login")!
-            var request = URLRequest(url: url)
-            request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
-            request.httpMethod = "POST"
-            let postString = "username=\(username.text)&password=\(password.text)"
-            request.httpBody = postString.data(using: .utf8)
-            let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                 DispatchQueue.main.async {
-                    self.activityIndicator.stopAnimating()
+                    
+                    UIView.animate(withDuration: 0.5, animations: {
+                        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                        let navvc = storyboard.instantiateViewController(withIdentifier: "navvc") as! UINavigationController
+                        let dashboardvc = storyboard.instantiateViewController(withIdentifier: "pattabbarvc") as! UITabBarController
+                        dashboardvc.selectedIndex = 2
+                        navvc.viewControllers = [dashboardvc]
+                        UIApplication.shared.keyWindow?.rootViewController = navvc
+                    })
+                    
                 }
-                guard let data = data, error == nil else {                                                 // check for fundamental networking error
-                    print("error=\(error?.localizedDescription)")
-                    return
-                }
-                
-                if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode == 200 {           // check for http errors
-                    print("statusCode should be 200, but is \(httpStatus.statusCode)")
-                    print("response = \(response)")
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                        DispatchQueue.main.async {
-                            
-                            UIView.animate(withDuration: 0.5, animations: {
-                                let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                                let navvc = storyboard.instantiateViewController(withIdentifier: "navvc") as! UINavigationController
-                                let dashboardvc = storyboard.instantiateViewController(withIdentifier: "pattabbarvc") as! UITabBarController
-                                navvc.viewControllers = [dashboardvc]
-                                UIApplication.shared.keyWindow?.rootViewController = navvc
-                            })
-                            
-                        }
-                    }
-                }
-                
-                let responseString = String(data: data, encoding: .utf8)
-                print("responseString = \(responseString)")
             }
-            task.resume()
+            
+//            DispatchQueue.main.async {
+//                self.activityIndicator.startAnimating()
+//            }
+//
+//            let url = URL(string: "http://10.2.231.133:8081/user/login")!
+//            var request = URLRequest(url: url)
+//            request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+//            request.httpMethod = "POST"
+//            let postString = "username=\(username.text)&password=\(password.text)"
+//            request.httpBody = postString.data(using: .utf8)
+//            let task = URLSession.shared.dataTask(with: request) { data, response, error in
+//                DispatchQueue.main.async {
+//                    self.activityIndicator.stopAnimating()
+//                }
+//                guard let data = data, error == nil else {                                                 // check for fundamental networking error
+//                    print("error=\(error?.localizedDescription)")
+//                    return
+//                }
+//                
+//                if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode == 200 {           // check for http errors
+//                    print("statusCode should be 200, but is \(httpStatus.statusCode)")
+//                    print("response = \(response)")
+//                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+//                        DispatchQueue.main.async {
+//                            
+//                            UIView.animate(withDuration: 0.5, animations: {
+//                                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//                                let navvc = storyboard.instantiateViewController(withIdentifier: "navvc") as! UINavigationController
+//                                let dashboardvc = storyboard.instantiateViewController(withIdentifier: "pattabbarvc") as! UITabBarController
+//                                navvc.viewControllers = [dashboardvc]
+//                                UIApplication.shared.keyWindow?.rootViewController = navvc
+//                            })
+//                            
+//                        }
+//                    }
+//                }
+//                
+//                let responseString = String(data: data, encoding: .utf8)
+//                print("responseString = \(responseString)")
+//            }
+//            task.resume()
         } else {
             let alertVC = UIAlertController(title: "Login", message: "Please enter username and password", preferredStyle: UIAlertControllerStyle.alert)
             let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
