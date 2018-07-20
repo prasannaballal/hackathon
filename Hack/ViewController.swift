@@ -40,73 +40,74 @@ class ViewController: UIViewController {
     
     @IBAction func loginAction(_ sender: Any) {
         
-        
-        
-        // http://cl-service-route-cl-service.f-az.uk.pass.intranet.db.com/users/roles
-        // http://10.2.231.133:8081/user/roles
-//                let url = URL(string: "http://cl-service-route-cl-service.f-az.uk.pass.intranet.db.com/users/roles")
-//        
-//                let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
-//                    if let _ = data{
-//                        let newData = String(data: data!, encoding: String.Encoding.utf8)
-//                    }
-//        
-//        
-//                    //            print("Data:",String(data: data!, encoding: String.Encoding.utf8) ?? "")
-//        
-//                    //            DispatchQueue.main.async {
-//                    //                self.textArea.text = String(data: data!, encoding: String.Encoding.utf8)
-//                    //            }
-//                    print("Error",error?.localizedDescription)
-//                    print("Response:",response)
-//        
-//                }
-        //
-        //
-        //        task.resume()
-            DispatchQueue.main.async {
-                
-                UIView.animate(withDuration: 0.5, animations: {
-                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    let navvc = storyboard.instantiateViewController(withIdentifier: "navvc") as! UINavigationController
-                    let dashboardvc = storyboard.instantiateViewController(withIdentifier: "pattabbarvc") as! UITabBarController
-                    navvc.viewControllers = [dashboardvc]
-                    UIApplication.shared.keyWindow?.rootViewController = navvc
-                })
-                
-            }
-        
-        
-//        if validateUsernamePassword() {
-//            var tabbar = ""
-//            if username.text == "patient" {
-//                tabbar = "pattabbarvc"
-//            } else if username.text == "doctor" {
-//                tabbar = "doctabbarvc"
-//            }
-//            
 //            DispatchQueue.main.async {
-//                self.activityIndicator.startAnimating()
+//                UIView.animate(withDuration: 0.5, animations: {
+//                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//                    let navvc = storyboard.instantiateViewController(withIdentifier: "navvc") as! UINavigationController
+//                    let dashboardvc = storyboard.instantiateViewController(withIdentifier: "pattabbarvc") as! UITabBarController
+//                    navvc.viewControllers = [dashboardvc]
+//                    UIApplication.shared.keyWindow?.rootViewController = navvc
+//                })
+//                
 //            }
-//            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-//                DispatchQueue.main.async {
-//                    
-//                    UIView.animate(withDuration: 0.5, animations: {
-//                        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//                        let navvc = storyboard.instantiateViewController(withIdentifier: "navvc") as! UINavigationController
-//                        let dashboardvc = storyboard.instantiateViewController(withIdentifier: tabbar) as! UITabBarController
-//                        navvc.viewControllers = [dashboardvc]
-//                        UIApplication.shared.keyWindow?.rootViewController = navvc
-//                    })
-//                    
-//                }
-//            }
-//        } else {
-//            let alertVC = UIAlertController(title: "Login", message: "Please enter username and password", preferredStyle: UIAlertControllerStyle.alert)
-//            let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-//            alertVC.addAction(defaultAction)
-//            self.present(alertVC, animated: true, completion: nil)
+        
+//        var tabbar = ""
+//        if username.text == "patient" {
+//            tabbar = "pattabbarvc"
+//        } else if username.text == "doctor" {
+//            tabbar = "doctabbarvc"
 //        }
+        
+        
+        if validateUsernamePassword() {
+            
+            DispatchQueue.main.async {
+                self.activityIndicator.startAnimating()
+            }
+            
+            let url = URL(string: "http://10.2.231.133:8081/user/login")!
+            var request = URLRequest(url: url)
+            request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+            request.httpMethod = "POST"
+            let postString = "username=\(username.text)&password=\(password.text)"
+            request.httpBody = postString.data(using: .utf8)
+            let task = URLSession.shared.dataTask(with: request) { data, response, error in
+                DispatchQueue.main.async {
+                    self.activityIndicator.stopAnimating()
+                }
+                guard let data = data, error == nil else {                                                 // check for fundamental networking error
+                    print("error=\(error?.localizedDescription)")
+                    return
+                }
+                
+                if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode == 200 {           // check for http errors
+                    print("statusCode should be 200, but is \(httpStatus.statusCode)")
+                    print("response = \(response)")
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                        DispatchQueue.main.async {
+                            
+                            UIView.animate(withDuration: 0.5, animations: {
+                                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                                let navvc = storyboard.instantiateViewController(withIdentifier: "navvc") as! UINavigationController
+                                let dashboardvc = storyboard.instantiateViewController(withIdentifier: "pattabbarvc") as! UITabBarController
+                                navvc.viewControllers = [dashboardvc]
+                                UIApplication.shared.keyWindow?.rootViewController = navvc
+                            })
+                            
+                        }
+                    }
+                }
+                
+                let responseString = String(data: data, encoding: .utf8)
+                print("responseString = \(responseString)")
+            }
+            task.resume()
+        } else {
+            let alertVC = UIAlertController(title: "Login", message: "Please enter username and password", preferredStyle: UIAlertControllerStyle.alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alertVC.addAction(defaultAction)
+            self.present(alertVC, animated: true, completion: nil)
+        }
     }
     
     @IBAction func forgotPassAction(_ sender: Any) {
