@@ -12,6 +12,10 @@ class AppHistoryViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let backImageView = UIImageView(image: UIImage(named: "background2"))
+        self.view.addSubview(backImageView)
+        self.view.sendSubview(toBack: backImageView)
+
 
         // Do any additional setup after loading the view.
     }
@@ -21,13 +25,42 @@ class AppHistoryViewController: UIViewController{
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func popUpPrescription(_ sender: Any) {
+    @IBAction func popUpPres(_ sender: Any) {
         let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "popUpPres1") as! PopUpPrescriptionViewController
         self.addChildViewController(popOverVC)
         popOverVC.view.frame = self.view.frame
         self.view.addSubview(popOverVC.view)
         popOverVC.didMove(toParentViewController: self)
     }
+    @IBAction func pres1(_ sender: Any) {
+        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "popUpPres1") as! PopUpPrescriptionViewController
+        self.addChildViewController(popOverVC)
+        popOverVC.view.frame = self.view.frame
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMove(toParentViewController: self)
+    }
+    @IBAction func pres2(_ sender: Any) {
+        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "popUpPres1") as! PopUpPrescriptionViewController
+        self.addChildViewController(popOverVC)
+        popOverVC.view.frame = self.view.frame
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMove(toParentViewController: self)
+    }
+    @IBAction func pres3(_ sender: Any) {
+        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "popUpPres1") as! PopUpPrescriptionViewController
+        self.addChildViewController(popOverVC)
+        popOverVC.view.frame = self.view.frame
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMove(toParentViewController: self)
+    }
+    @IBAction func pres4(_ sender: Any) {
+        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "popUpPres1") as! PopUpPrescriptionViewController
+        self.addChildViewController(popOverVC)
+        popOverVC.view.frame = self.view.frame
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMove(toParentViewController: self)
+    }
+
 
 
         /*

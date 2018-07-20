@@ -16,6 +16,9 @@ class MyTrackerTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let backImageView = UIImageView(image: UIImage(named: "background2"))
+        self.view.addSubview(backImageView)
+        self.view.sendSubview(toBack: backImageView)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

@@ -15,6 +15,12 @@
 		2C94BE2F21011BBE005A4B9C /* PopUpPrescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C94BE2E21011BBE005A4B9C /* PopUpPrescriptionViewController.swift */; };
 		2C94BE312101305C005A4B9C /* DoctorProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C94BE302101305C005A4B9C /* DoctorProfileViewController.swift */; };
 		2C94BE3321013177005A4B9C /* ReportStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C94BE3221013177005A4B9C /* ReportStoreViewController.swift */; };
+		2C94BE352101392C005A4B9C /* PrescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C94BE342101392C005A4B9C /* PrescriptionViewController.swift */; };
+		2C94BE3721014E83005A4B9C /* FunPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C94BE3621014E83005A4B9C /* FunPageViewController.swift */; };
+		2C94BE3921016E55005A4B9C /* MusicPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C94BE3821016E55005A4B9C /* MusicPlayerViewController.swift */; };
+		2C94BE3C21016FC1005A4B9C /* Test1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2C94BE3B21016FC1005A4B9C /* Test1.mp3 */; };
+		2C94BE3E2101BDD1005A4B9C /* Doctor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C94BE3D2101BDD1005A4B9C /* Doctor.storyboard */; };
+		2C94BE402101BDED005A4B9C /* AnyStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C94BE3F2101BDED005A4B9C /* AnyStoryboard.storyboard */; };
 		2CA6F3F020FC889E00437F72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA6F3EF20FC889E00437F72 /* AppDelegate.swift */; };
 		2CA6F3F220FC889E00437F72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA6F3F120FC889E00437F72 /* ViewController.swift */; };
 		2CA6F3F520FC889E00437F72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CA6F3F320FC889E00437F72 /* Main.storyboard */; };
@@ -52,6 +58,12 @@
 		2C94BE2E21011BBE005A4B9C /* PopUpPrescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpPrescriptionViewController.swift; sourceTree = "<group>"; };
 		2C94BE302101305C005A4B9C /* DoctorProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorProfileViewController.swift; sourceTree = "<group>"; };
 		2C94BE3221013177005A4B9C /* ReportStoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportStoreViewController.swift; sourceTree = "<group>"; };
+		2C94BE342101392C005A4B9C /* PrescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrescriptionViewController.swift; sourceTree = "<group>"; };
+		2C94BE3621014E83005A4B9C /* FunPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunPageViewController.swift; sourceTree = "<group>"; };
+		2C94BE3821016E55005A4B9C /* MusicPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPlayerViewController.swift; sourceTree = "<group>"; };
+		2C94BE3B21016FC1005A4B9C /* Test1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Test1.mp3; sourceTree = "<group>"; };
+		2C94BE3D2101BDD1005A4B9C /* Doctor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Doctor.storyboard; sourceTree = "<group>"; };
+		2C94BE3F2101BDED005A4B9C /* AnyStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AnyStoryboard.storyboard; sourceTree = "<group>"; };
 		2CA6F3EC20FC889E00437F72 /* Hack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA6F3EF20FC889E00437F72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CA6F3F120FC889E00437F72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +104,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C94BE3A21016F70005A4B9C /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				2C94BE3B21016FC1005A4B9C /* Test1.mp3 */,
+			);
+			name = Music;
+			sourceTree = "<group>";
+		};
 		2CA6F3E320FC889E00437F72 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +133,7 @@
 		2CA6F3EE20FC889E00437F72 /* Hack */ = {
 			isa = PBXGroup;
 			children = (
+				2C94BE3A21016F70005A4B9C /* Music */,
 				2CA6F3EF20FC889E00437F72 /* AppDelegate.swift */,
 				2CA6F3F120FC889E00437F72 /* ViewController.swift */,
 				2CA6F3F320FC889E00437F72 /* Main.storyboard */,
@@ -137,6 +158,11 @@
 				2C94BE2E21011BBE005A4B9C /* PopUpPrescriptionViewController.swift */,
 				2C94BE302101305C005A4B9C /* DoctorProfileViewController.swift */,
 				2C94BE3221013177005A4B9C /* ReportStoreViewController.swift */,
+				2C94BE342101392C005A4B9C /* PrescriptionViewController.swift */,
+				2C94BE3621014E83005A4B9C /* FunPageViewController.swift */,
+				2C94BE3821016E55005A4B9C /* MusicPlayerViewController.swift */,
+				2C94BE3D2101BDD1005A4B9C /* Doctor.storyboard */,
+				2C94BE3F2101BDED005A4B9C /* AnyStoryboard.storyboard */,
 			);
 			path = Hack;
 			sourceTree = "<group>";
@@ -201,6 +227,11 @@
 					2CA6F3EB20FC889E00437F72 = {
 						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					2CA6F40220FC889E00437F72 = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -233,8 +264,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C94BE402101BDED005A4B9C /* AnyStoryboard.storyboard in Resources */,
 				2CA6F3FD20FC889E00437F72 /* LaunchScreen.storyboard in Resources */,
 				2CA6F3FA20FC889E00437F72 /* Assets.xcassets in Resources */,
+				2C94BE3C21016FC1005A4B9C /* Test1.mp3 in Resources */,
+				2C94BE3E2101BDD1005A4B9C /* Doctor.storyboard in Resources */,
 				2CA6F3F520FC889E00437F72 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +294,7 @@
 				7DC8721E2100A75100D76E8F /* TrackerCell.swift in Sources */,
 				2CA6F41520FDFAEE00437F72 /* DashboardViewController.swift in Sources */,
 				7DC8721220FF4E0C00D76E8F /* MoreViewController.swift in Sources */,
+				2C94BE352101392C005A4B9C /* PrescriptionViewController.swift in Sources */,
 				2C94BE312101305C005A4B9C /* DoctorProfileViewController.swift in Sources */,
 				7DC8721A2100905000D76E8F /* DonationDetailViewController.swift in Sources */,
 				2CA6F41320FDF61E00437F72 /* SignUpViewController.swift in Sources */,
@@ -267,12 +302,14 @@
 				2C94BE272100D36C005A4B9C /* CheckAppointmentViewController.swift in Sources */,
 				2C94BE292100D94F005A4B9C /* BookAnAppointmentViewController.swift in Sources */,
 				2C94BE2F21011BBE005A4B9C /* PopUpPrescriptionViewController.swift in Sources */,
+				2C94BE3921016E55005A4B9C /* MusicPlayerViewController.swift in Sources */,
 				2C94BE2B2100FA2F005A4B9C /* AppHistoryViewController.swift in Sources */,
 				2C94BE252100BEE7005A4B9C /* ConsultationViewController.swift in Sources */,
 				2CA6F3F020FC889E00437F72 /* AppDelegate.swift in Sources */,
 				2C94BE2D2100FEBB005A4B9C /* TableViewCell.swift in Sources */,
 				7DC872162100767100D76E8F /* FAQTableViewController.swift in Sources */,
 				7DC8721420FF639D00D76E8F /* MyTrackerTableViewController.swift in Sources */,
+				2C94BE3721014E83005A4B9C /* FunPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

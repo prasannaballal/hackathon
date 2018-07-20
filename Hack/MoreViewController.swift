@@ -13,6 +13,9 @@ class MoreViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let backImageView = UIImageView(image: UIImage(named: "background2"))
+        self.view.addSubview(backImageView)
+        self.view.sendSubview(toBack: backImageView)
         
         // Do any additional setup after loading the view.
         signOut.layer.cornerRadius = 5.0

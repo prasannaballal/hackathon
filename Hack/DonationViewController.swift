@@ -14,7 +14,9 @@ class DonationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let backImageView = UIImageView(image: UIImage(named: "background2"))
+        self.view.addSubview(backImageView)
+        self.view.sendSubview(toBack: backImageView)
         // Do any additional setup after loading the view.
         centerView.layer.cornerRadius = centerView.frame.size.width / 2
         centerView.clipsToBounds = true
